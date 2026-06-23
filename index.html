@@ -1,12 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shabaa Alam Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- INTRO SECTION -->
+  <header class="intro">
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>
+      Engineering student passionate about design, simulation, and building real-world systems.
+      I enjoy solving complex problems through structured thinking and practical implementation.
+    </p>
+  </header>
+
+  <!-- PERSONAL PROJECTS -->
+  <section class="project-section">
+    <h2>Personal Projects</h2>
+    <p class="scroll-hint">Scroll →</p>
+
+    <div class="scroll-container">
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <img src="assets/img/project1.jpg" alt="Project Image"/>
+        <h3>Project One</h3>
+        <p>Short description of personal project.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/project2.jpg" alt="Project Image"/>
+        <h3>Project Two</h3>
+        <p>Short description of personal project.</p>
+      </div>
+
+      <!-- ADD MORE PROJECTS HERE -->
+      <!-- Copy paste project-card block -->
+
+    </div>
+  </section>
+
+
+  <!-- ACADEMIC PROJECTS -->
+  <section class="project-section alt">
+    <h2>Academic Projects</h2>
+    <p class="scroll-hint">Scroll →</p>
+
+    <div class="scroll-container">
+
+      <div class="project-card">
+        <img src="assets/img/academic1.jpg" alt="Project Image"/>
+        <h3>Academic Project One</h3>
+        <p>Short description of academic work.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/academic2.jpg" alt="Project Image"/>
+        <h3>Academic Project Two</h3>
+        <p>Short description of academic work.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <footer class="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for collaboration or queries.</p>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <p class="footer-note">© [Your Name] — Engineering Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
