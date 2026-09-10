@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shabaa Alam — Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
-  <!-- FontAwesome for clean icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'"/>
 </head>
 
@@ -40,7 +39,7 @@
       <div class="social-links">
         <a href="https://linkedin.com/in/shabaa-alam-866870224/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:shabaaalam@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/RubberDucky2705" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </header>
@@ -55,11 +54,19 @@
 
     <div class="scroll-container">
 
-      <!-- ICLR Rocketry -->
+      <!-- ICLR Rocketry (Multiple Images with Dropdown) -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/iclr-rocket.jpg" alt="ICLR Rocketry Filament Winder" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Filament+Winder+CAD'"/>
+          <img id="iclr-img" src="assets/img/ICLR_1.png" alt="ICLR Rocketry Filament Winder"/>
           <span class="badge team">Team Project</span>
+          
+          <div class="media-dropdown">
+            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_1.png'); return false;">Image 1 (Winder Assembly)</a>
+              <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_2.png'); return false;">Image 2 (Machined Shaft)</a>
+            </div>
+          </div>
         </div>
         <div class="card-content">
           <h3>ICLR Ember Rocket Team (EuRoC)</h3>
@@ -77,7 +84,7 @@
       <!-- Formula Student -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/formula-student.jpg" alt="Formula Student Seat Composite" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Formula+Student+Seat'"/>
+          <img src="assets/img/IFR.jpg" alt="Formula Student Seat Composite"/>
           <span class="badge team">Team Project</span>
         </div>
         <div class="card-content">
@@ -93,11 +100,19 @@
         </div>
       </div>
 
-      <!-- TDI Medical UAV -->
+      <!-- TDI Medical UAV (Video / Image Media) -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/tdi-uav.jpg" alt="Medical UAV Concept" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Medical+UAV+Design'"/>
+          <img src="assets/img/MedicalDrone.jpg" alt="Medical UAV Concept"/>
           <span class="badge solo">Solo Project</span>
+          
+          <div class="media-dropdown">
+            <button class="dropdown-btn"><i class="fa-solid fa-film"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="assets/img/MedicalDrone.jpg" target="_blank">Photo Preview</a>
+              <a href="assets/img/MedicalDrone.mp4" target="_blank"><i class="fa-solid fa-play"></i> Watch Flight Video</a>
+            </div>
+          </div>
         </div>
         <div class="card-content">
           <h3>TDI Challenge Medical Delivery UAV</h3>
@@ -115,7 +130,7 @@
       <!-- Paparazzi Rover -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/paparazzi-rover.jpg" alt="Paparazzi Rover Suspension" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Paparazzi+Rover+Assembly'"/>
+          <img src="assets/img/PaparazziRover.jpg" alt="Paparazzi Rover Suspension"/>
           <span class="badge team">Team Project</span>
         </div>
         <div class="card-content">
@@ -145,11 +160,20 @@
 
     <div class="scroll-container">
 
-      <!-- Duo Copter -->
+      <!-- Duo Copter (3 Images with Dropdown) -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/duocopter.jpg" alt="Duo copter Controller" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Duocopter+PID+Simulink'"/>
+          <img id="duo-img" src="assets/img/DuoCopter_1.png" alt="Duo copter Controller"/>
           <span class="badge academic">2nd Year Final</span>
+          
+          <div class="media-dropdown">
+            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_1.png'); return false;">Image 1 (Hardware Rig)</a>
+              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_2.png'); return false;">Image 2 (Simulink Diagram)</a>
+              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_3.png'); return false;">Image 3 (PID Response)</a>
+            </div>
+          </div>
         </div>
         <div class="card-content">
           <h3>Guided Duocopter PID Controller</h3>
@@ -164,11 +188,19 @@
         </div>
       </div>
 
-      <!-- Aircraft Autopilot -->
+      <!-- Aircraft Autopilot (2 Images with Dropdown) -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/autopilot.jpg" alt="Aircraft Autopilot Simulation" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Simulink+Autopilot'"/>
+          <img id="auto-img" src="assets/img/Autopilot_1.png" alt="Aircraft Autopilot Simulation"/>
           <span class="badge academic">2nd Year Lab</span>
+          
+          <div class="media-dropdown">
+            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_1.png'); return false;">Image 1 (Control Architecture)</a>
+              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_2.png'); return false;">Image 2 (Flight Trajectory Plot)</a>
+            </div>
+          </div>
         </div>
         <div class="card-content">
           <h3>Simulink Aircraft Autopilot</h3>
@@ -183,11 +215,19 @@
         </div>
       </div>
 
-      <!-- Wind Turbine -->
+      <!-- Wind Turbine (2 Images with Dropdown) -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/wind-turbine.jpg" alt="Model Wind Turbine Structures" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Wind+Turbine+Structural'"/>
+          <img id="turbine-img" src="assets/img/WindTurbine_1.jpg" alt="Model Wind Turbine Structures"/>
           <span class="badge academic">1st Year Final</span>
+          
+          <div class="media-dropdown">
+            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_1.jpg'); return false;">Image 1 (Turbine Rig)</a>
+              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_2.png'); return false;">Image 2 (Structural CAD)</a>
+            </div>
+          </div>
         </div>
         <div class="card-content">
           <h3>Model Wind Turbine Structural Rig</h3>
@@ -205,7 +245,7 @@
       <!-- Airfoil Streamline -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/airfoil-streamline.jpg" alt="MATLAB Airfoil Streamlines" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Airfoil+Streamlines'"/>
+          <img src="assets/img/Streamlines.png" alt="MATLAB Airfoil Streamlines"/>
           <span class="badge solo">Solo Project</span>
         </div>
         <div class="card-content">
@@ -224,20 +264,19 @@
     </div>
   </section>
 
-
   <!-- CONTACT SECTION -->
   <footer id="contact" class="contact">
     <div class="contact-container">
       <h2>Get In Touch</h2>
       <p>I'm always open to discussing aerospace engineering placements, technical projects, or maker collaborations.</p>
 
-      <form id="contactForm">
-        <form action="https://formspree.io/f/xeaqnayd" method="POST" id="contactForm">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="email" id="email" placeholder="Your Email" required />
+      <form action="https://formspree.io/f/xeaqnayd" method="POST" id="contactForm">
+        <div class="form-row">
+          <input type="text" name="name" id="name" placeholder="Your Name" required />
+          <input type="email" name="_replyto" id="email" placeholder="Your Email" required />
         </div>
-        <input type="text" id="subject" placeholder="Subject" required />
-        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="text" name="_subject" id="subject" placeholder="Subject" required />
+        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
       </form>
 
@@ -248,5 +287,18 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Inline helper function to swap project image previews
+    function switchMedia(imgId, newSrc) {
+      const imgElem = document.getElementById(imgId);
+      if (imgElem) {
+        imgElem.style.opacity = '0';
+        setTimeout(() => {
+          imgElem.src = newSrc;
+          imgElem.style.opacity = '1';
+        }, 150);
+      }
+    }
+  </script>
 </body>
 </html>
