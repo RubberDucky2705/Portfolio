@@ -3,65 +3,222 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Engineering Portfolio</title>
+  <title>Shabaa Alam — Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <!-- FontAwesome for clean icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 
 <body>
 
-  <!-- INTRO SECTION -->
-  <header class="intro">
-    <h1>Hi, I'm [Your Name]</h1>
-    <p>
-      Engineering student passionate about design, simulation, and building real-world systems.
-      I enjoy solving complex problems through structured thinking and practical implementation.
-    </p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">Shabaa Alam</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#extracurricular">Extracurricular</a></li>
+      <li><a href="#academic">Academic</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / INTRO SECTION -->
+  <header id="about" class="intro">
+    <div class="intro-content">
+      <h1>Hi, I'm <span class="highlight">Shabaa Alam</span></h1>
+      <h2>3rd Year MEng Aeronautical Engineering Student at Imperial College London</h2>
+      <p>
+        Passionate about aerodynamics, structural analysis, control systems, and rapid manufacturing. 
+        When I'm not in the workshop or running simulations, you'll find me tinkering with 3D printers, custom PC builds, gaming, and exploring mechanical maker projects.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="Shabaa_Alam_CV.pdf" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+        <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/shabaa-alam-866870224/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:shabaaalam@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
   </header>
 
-  <!-- PERSONAL PROJECTS -->
-  <section class="project-section">
-    <h2>Personal Projects</h2>
-    <p class="scroll-hint">Scroll →</p>
+  <!-- EXTRACURRICULAR PROJECTS -->
+  <section id="extracurricular" class="project-section">
+    <div class="section-header">
+      <h2>Extracurricular & Team Projects</h2>
+      <p class="section-subtitle">Engineering competition teams and independent technical challenges</p>
+    </div>
+    <p class="scroll-hint"><i class="fa-solid fa-arrow-right-long"></i> Scroll to explore</p>
 
     <div class="scroll-container">
 
-      <!-- PROJECT CARD -->
+      <!-- ICLR Rocketry -->
       <div class="project-card">
-        <img src="assets/img/project1.jpg" alt="Project Image"/>
-        <h3>Project One</h3>
-        <p>Short description of personal project.</p>
+        <div class="card-image">
+          <img src="assets/img/iclr-rocket.jpg" alt="ICLR Rocketry Filament Winder" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Filament+Winder+CAD'"/>
+          <span class="badge team">Team Project</span>
+        </div>
+        <div class="card-content">
+          <h3>ICLR Ember Rocket Team (EuRoC)</h3>
+          <p class="role">Design & Manufacturing Engineer</p>
+          <p class="desc">Designed ISO-tolerant CAD assemblies in Fusion 360 for a custom filament winder and precision-machined drive shaft components down to 5-micron tolerances.</p>
+          <div class="tags">
+            <span class="tag">Fusion 360</span>
+            <span class="tag">CAD</span>
+            <span class="tag">Manual Lathe</span>
+            <span class="tag">Machining</span>
+          </div>
+        </div>
       </div>
 
+      <!-- Formula Student -->
       <div class="project-card">
-        <img src="assets/img/project2.jpg" alt="Project Image"/>
-        <h3>Project Two</h3>
-        <p>Short description of personal project.</p>
+        <div class="card-image">
+          <img src="assets/img/formula-student.jpg" alt="Formula Student Seat Composite" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Formula+Student+Seat'"/>
+          <span class="badge team">Team Project</span>
+        </div>
+        <div class="card-content">
+          <h3>Imperial Formula Racing (Formula Student)</h3>
+          <p class="role">Composites Engineer</p>
+          <p class="desc">Engineered an ergonomic driver seat inlay using expanding foam and carbon fibre laying techniques complying strictly with competition rules and safety regulations.</p>
+          <div class="tags">
+            <span class="tag">Composites</span>
+            <span class="tag">Carbon Fibre</span>
+            <span class="tag">Ergonomics</span>
+            <span class="tag">Risk Assessment</span>
+          </div>
+        </div>
       </div>
 
-      <!-- ADD MORE PROJECTS HERE -->
-      <!-- Copy paste project-card block -->
+      <!-- TDI Medical UAV -->
+      <div class="project-card">
+        <div class="card-image">
+          <img src="assets/img/tdi-uav.jpg" alt="Medical UAV Concept" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Medical+UAV+Design'"/>
+          <span class="badge solo">Solo Project</span>
+        </div>
+        <div class="card-content">
+          <h3>TDI Challenge Medical Delivery UAV</h3>
+          <p class="role">Lead Systems Designer</p>
+          <p class="desc">Designed a specialized unmanned aerial vehicle conceptualized for rapid medical supply delivery into remote access areas with optimized aerodynamic efficiency.</p>
+          <div class="tags">
+            <span class="tag">Aerodynamics</span>
+            <span class="tag">UAV Systems</span>
+            <span class="tag">3D Printing</span>
+            <span class="tag">Prototyping</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paparazzi Rover -->
+      <div class="project-card">
+        <div class="card-image">
+          <img src="assets/img/paparazzi-rover.jpg" alt="Paparazzi Rover Suspension" onerror="this.src='https://via.placeholder.com/400x220/1e293b/38bdf8?text=Paparazzi+Rover+Assembly'"/>
+          <span class="badge team">Team Project</span>
+        </div>
+        <div class="card-content">
+          <h3>EDT Industrial Cadets Paparazzi Rover</h3>
+          <p class="role">Mechanical Lead (Suspension & Drive)</p>
+          <p class="desc">Engineered the suspension and mechanical drivetrain mechanics for an all-terrain autonomous rover designed for dynamic terrain traversal.</p>
+          <div class="tags">
+            <span class="tag">SolidWorks</span>
+            <span class="tag">Drivetrain</span>
+            <span class="tag">Suspension Design</span>
+            <span class="tag">Robotics</span>
+          </div>
+        </div>
+      </div>
 
     </div>
   </section>
 
 
-  <!-- ACADEMIC PROJECTS -->
-  <section class="project-section alt">
-    <h2>Academic Projects</h2>
-    <p class="scroll-hint">Scroll →</p>
+  <!-- NOTABLE ACADEMIC PROJECTS -->
+  <section id="academic" class="project-section alt">
+    <div class="section-header">
+      <h2>Notable Academic Projects</h2>
+      <p class="section-subtitle">Core coursework and laboratory engineering projects at Imperial College London</p>
+    </div>
+    <p class="scroll-hint"><i class="fa-solid fa-arrow-right-long"></i> Scroll to explore</p>
 
     <div class="scroll-container">
 
+      <!-- Duo Copter -->
       <div class="project-card">
-        <img src="assets/img/academic1.jpg" alt="Project Image"/>
-        <h3>Academic Project One</h3>
-        <p>Short description of academic work.</p>
+        <div class="card-image">
+          <img src="assets/img/duocopter.jpg" alt="Duo copter Controller" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Duocopter+PID+Simulink'"/>
+          <span class="badge academic">2nd Year Final</span>
+        </div>
+        <div class="card-content">
+          <h3>Guided Duocopter PID Controller</h3>
+          <p class="role">Control & Systems Lead</p>
+          <p class="desc">Modelled and tuned a discrete PID controller using MATLAB & Simulink to stabilize a dual-rotor vehicle, optimizing response time and energy efficiency.</p>
+          <div class="tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Simulink</span>
+            <span class="tag">PID Control</span>
+            <span class="tag">Flight Dynamics</span>
+          </div>
+        </div>
       </div>
 
+      <!-- Aircraft Autopilot -->
       <div class="project-card">
-        <img src="assets/img/academic2.jpg" alt="Project Image"/>
-        <h3>Academic Project Two</h3>
-        <p>Short description of academic work.</p>
+        <div class="card-image">
+          <img src="assets/img/autopilot.jpg" alt="Aircraft Autopilot Simulation" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Simulink+Autopilot'"/>
+          <span class="badge academic">2nd Year Lab</span>
+        </div>
+        <div class="card-content">
+          <h3>Simulink Aircraft Autopilot</h3>
+          <p class="role">Individual Lab Lead</p>
+          <p class="desc">Developed closed-loop control system architectures in Simulink to govern longitudinal stability, altitude hold, and attitude heading for commercial aircraft models.</p>
+          <div class="tags">
+            <span class="tag">Simulink</span>
+            <span class="tag">Avionics</span>
+            <span class="tag">Control Theory</span>
+            <span class="tag">State-Space</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wind Turbine -->
+      <div class="project-card">
+        <div class="card-image">
+          <img src="assets/img/wind-turbine.jpg" alt="Model Wind Turbine Structures" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Wind+Turbine+Structural'"/>
+          <span class="badge academic">1st Year Final</span>
+        </div>
+        <div class="card-content">
+          <h3>Model Wind Turbine Structural Rig</h3>
+          <p class="role">Structures Team Engineer</p>
+          <p class="desc">Designed and structural-tested scaled wind turbine components to withstand dynamic wind tunnel forces while minimizing blade weight.</p>
+          <div class="tags">
+            <span class="tag">Structural FEA</span>
+            <span class="tag">Wind Tunnel</span>
+            <span class="tag">CAD</span>
+            <span class="tag">Materials</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Airfoil Streamline -->
+      <div class="project-card">
+        <div class="card-image">
+          <img src="assets/img/airfoil-streamline.jpg" alt="MATLAB Airfoil Streamlines" onerror="this.src='https://via.placeholder.com/400x220/0f172a/38bdf8?text=Airfoil+Streamlines'"/>
+          <span class="badge solo">Solo Project</span>
+        </div>
+        <div class="card-content">
+          <h3>MATLAB Airfoil Streamline Generator</h3>
+          <p class="role">1st Year Computational Project</p>
+          <p class="desc">Programmed a custom computational tool in MATLAB utilizing potential flow theory to plot flow field streamlines around arbitrary foil geometries.</p>
+          <div class="tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Fluid Dynamics</span>
+            <span class="tag">Potential Flow</span>
+            <span class="tag">Algorithms</span>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -69,18 +226,25 @@
 
 
   <!-- CONTACT SECTION -->
-  <footer class="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out for collaboration or queries.</p>
+  <footer id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Get In Touch</h2>
+      <p>I'm always open to discussing aerospace engineering placements, technical projects, or maker collaborations.</p>
 
-    <form id="contactForm">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+      <form id="contactForm">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <input type="text" id="subject" placeholder="Subject" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
 
-    <p class="footer-note">© [Your Name] — Engineering Portfolio</p>
+      <div class="footer-bottom">
+        <p>© Shabaa Alam — MEng Aeronautical Engineering, Imperial College London</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
