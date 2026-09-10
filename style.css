@@ -452,3 +452,61 @@ input:focus, textarea:focus {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 20px;
 }
+/* ==========================================================================
+   IMAGE CURSOR & LIGHTBOX MODAL
+   ========================================================================== */
+.card-image img {
+  cursor: pointer;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(11, 15, 23, 0.95);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+  object-fit: contain;
+}
+
+#lightbox-caption {
+  margin-top: 15px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.lightbox-close:hover {
+  color: var(--accent-glow);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
