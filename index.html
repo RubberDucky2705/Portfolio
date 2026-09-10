@@ -56,18 +56,12 @@
 
       <!-- ICLR Rocketry -->
       <div class="project-card">
-        <div class="card-image">
-          <img id="iclr-img" src="assets/img/ICLR_1.png" alt="ICLR Rocketry Filament Winder" onclick="openLightbox(this)"/>
+        <div class="card-image" data-images='["assets/img/ICLR_1.png", "assets/img/ICLR_2.png", "assets/img/ICLR_3.jpg"]' data-captions='["Winder Assembly", "5 micron tolerance", "Part in Lathe"]'>
+          <img src="assets/img/ICLR_1.png" alt="ICLR Rocketry — Winder Assembly" onclick="openLightbox(this)"/>
           <span class="badge team">Team Project</span>
-          
-          <div class="media-dropdown" onclick="event.stopPropagation();">
-            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content">
-              <a href="#" onclick="switchMedia(event, 'iclr-img', 'assets/img/ICLR_1.png');">Winder Assembly</a>
-              <a href="#" onclick="switchMedia(event, 'iclr-img', 'assets/img/ICLR_2.png');">5 micron tolerance</a>
-              <a href="#" onclick="switchMedia(event, 'iclr-img', 'assets/img/ICLR_3.jpg');">Part in Lathe</a>
-            </div>
-          </div>
+          <button class="nav-arrow left-arrow" onclick="cycleImage(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav-arrow right-arrow" onclick="cycleImage(event, this, 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="media-indicator">1/3</div>
         </div>
         <div class="card-content">
           <h3>ICLR Ember Rocket Team (EuRoC)</h3>
@@ -103,17 +97,10 @@
 
       <!-- TDI Medical UAV -->
       <div class="project-card">
-        <div class="card-image">
+        <div class="card-image" data-images='["assets/img/MedicalDrone.jpg"]'>
           <img src="assets/img/MedicalDrone.jpg" alt="Medical UAV Concept" onclick="openLightbox(this)"/>
           <span class="badge solo">Solo Project</span>
-          
-          <div class="media-dropdown" onclick="event.stopPropagation();">
-            <button class="dropdown-btn"><i class="fa-solid fa-film"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content">
-              <a href="assets/img/MedicalDrone.jpg" target="_blank" onclick="event.stopPropagation();">Photo Preview</a>
-              <a href="assets/img/MedicalDrone.mp4" target="_blank" onclick="event.stopPropagation();"><i class="fa-solid fa-play"></i> CAD Explosion Video</a>
-            </div>
-          </div>
+          <a href="assets/img/MedicalDrone.mp4" target="_blank" class="video-link-btn" onclick="event.stopPropagation()"><i class="fa-solid fa-play"></i> Video</a>
         </div>
         <div class="card-content">
           <h3>TDI Challenge Medical Delivery UAV</h3>
@@ -130,17 +117,12 @@
 
       <!-- Paparazzi Rover -->
       <div class="project-card">
-        <div class="card-image">
-          <img id="pap-img" src="assets/img/PaparazziRover.jpg" alt="Paparazzi Rover Suspension" onclick="openLightbox(this)"/>
+        <div class="card-image" data-images='["assets/img/PaparazziRover.jpg", "assets/img/ProjectOTYAward.jpg"]' data-captions='["Paparazzi Rover Suspension", "Project of the Year Award"]'>
+          <img src="assets/img/PaparazziRover.jpg" alt="Paparazzi Rover Suspension" onclick="openLightbox(this)"/>
           <span class="badge team">Team Project</span>
-
-          <div class="media-dropdown" onclick="event.stopPropagation();">
-            <button class="dropdown-btn"><i class="fa-solid fa-film"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content">
-              <a href="#" onclick="switchMedia(event, 'pap-img', 'assets/img/PaparazziRover.jpg');">Rover</a>
-              <a href="#" onclick="switchMedia(event, 'pap-img', 'assets/img/ProjectOTYAward.jpg');">Project of the year award</a>
-            </div>
-          </div>
+          <button class="nav-arrow left-arrow" onclick="cycleImage(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav-arrow right-arrow" onclick="cycleImage(event, this, 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="media-indicator">1/2</div>
         </div>
         <div class="card-content">
           <h3>EDT Industrial Cadets Paparazzi Rover</h3>
@@ -171,19 +153,12 @@
 
       <!-- Duo Copter -->
       <div class="project-card">
-        <div class="card-image">
-          <img id="duo-img" src="assets/img/DuoCopter_1.png" alt="Duo copter Controller" onclick="openLightbox(this)"/>
+        <div class="card-image" data-images='["assets/img/DuoCopter_1.png", "assets/img/DuoCopter_2.png", "assets/img/DuoCopter_3.png", "assets/img/DuoCopter_4.jpg"]' data-captions='["Hardware Rig", "Simulink Diagram", "Structural FEA", "Test 3D Print"]'>
+          <img src="assets/img/DuoCopter_1.png" alt="Guided Duocopter — Hardware Rig" onclick="openLightbox(this)"/>
           <span class="badge academic">2nd Year Final</span>
-          
-          <div class="media-dropdown" onclick="event.stopPropagation();">
-            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content">
-              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_1.png');">Hardware Rig</a>
-              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_2.png');">Simulink Diagram</a>
-              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_3.png');">Structural FEA</a>
-              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_4.jpg');">Test 3D Print</a>
-            </div>
-          </div>
+          <button class="nav-arrow left-arrow" onclick="cycleImage(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav-arrow right-arrow" onclick="cycleImage(event, this, 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="media-indicator">1/4</div>
         </div>
         <div class="card-content">
           <h3>Guided Duocopter PID Controller</h3>
@@ -200,18 +175,12 @@
 
       <!-- Aircraft Autopilot -->
       <div class="project-card">
-        <div class="card-image">
-          <img id="auto-img" src="assets/img/Autopilot_1.png" alt="Aircraft Autopilot Simulation" onclick="openLightbox(this)"/>
+        <div class="card-image" data-images='["assets/img/Autopilot_1.png", "assets/img/Autopilot_2.png", "assets/img/Autopilot_3.png"]' data-captions='["Control Architecture", "Wind Tunnel Tests", "Simulink Diagram"]'>
+          <img src="assets/img/Autopilot_1.png" alt="Simulink Aircraft Autopilot — Control Architecture" onclick="openLightbox(this)"/>
           <span class="badge academic">2nd Year Lab</span>
-          
-          <div class="media-dropdown" onclick="event.stopPropagation();">
-            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content">
-              <a href="#" onclick="switchMedia(event, 'auto-img', 'assets/img/Autopilot_1.png');">Control Architecture</a>
-              <a href="#" onclick="switchMedia(event, 'auto-img', 'assets/img/Autopilot_2.png');">Wind Tunnel Tests</a>
-              <a href="#" onclick="switchMedia(event, 'auto-img', 'assets/img/Autopilot_3.png');">Simulink Diagram</a>
-            </div>
-          </div>
+          <button class="nav-arrow left-arrow" onclick="cycleImage(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav-arrow right-arrow" onclick="cycleImage(event, this, 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="media-indicator">1/3</div>
         </div>
         <div class="card-content">
           <h3>Simulink Aircraft Autopilot</h3>
@@ -228,19 +197,12 @@
 
       <!-- Wind Turbine -->
       <div class="project-card">
-        <div class="card-image">
-          <img id="turbine-img" src="assets/img/WindTurbine_1.jpg" alt="Model Wind Turbine Structures" onclick="openLightbox(this)"/>
+        <div class="card-image" data-images='["assets/img/WindTurbine_1.jpg", "assets/img/WindTurbine_2.png", "assets/img/WindTurbine_3bendingmoment.png", "assets/img/WindTurbine_3stress.png"]' data-captions='["Turbine Rig", "Turbine Assembly", "Bending Moment Plot", "Stress FEA Analysis"]'>
+          <img src="assets/img/WindTurbine_1.jpg" alt="Model Wind Turbine — Turbine Rig" onclick="openLightbox(this)"/>
           <span class="badge academic">1st Year Final</span>
-          
-          <div class="media-dropdown" onclick="event.stopPropagation();">
-            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content">
-              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_1.jpg');">Turbine Rig</a>
-              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_2.png');">Turbine</a>
-              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_3bendingmoment.png');">Bending Moment</a>
-              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_3stress.png');">Stress Analysis</a>
-            </div>
-          </div>
+          <button class="nav-arrow left-arrow" onclick="cycleImage(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav-arrow right-arrow" onclick="cycleImage(event, this, 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="media-indicator">1/4</div>
         </div>
         <div class="card-content">
           <h3>Model Wind Turbine Structural Rig</h3>
@@ -257,17 +219,12 @@
 
       <!-- Airfoil Streamline -->
       <div class="project-card">
-        <div class="card-image">
-          <img id="stream-img" src="assets/img/Streamlines_1.png" alt="MATLAB Airfoil Streamlines" onclick="openLightbox(this)"/>
+        <div class="card-image" data-images='["assets/img/Streamlines_1.png", "assets/img/Streamlines_2.png"]' data-captions='["Streamlines Plot", "Vector Plot"]'>
+          <img src="assets/img/Streamlines_1.png" alt="MATLAB Airfoil Streamlines" onclick="openLightbox(this)"/>
           <span class="badge solo">Solo Project</span>
-          
-          <div class="media-dropdown" onclick="event.stopPropagation();">
-            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content">
-              <a href="#" onclick="switchMedia(event, 'stream-img', 'assets/img/Streamlines_1.png');">Streamlines Plot</a>
-              <a href="#" onclick="switchMedia(event, 'stream-img', 'assets/img/Streamlines_2.png');">Vector Plot</a>
-            </div>
-          </div>
+          <button class="nav-arrow left-arrow" onclick="cycleImage(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav-arrow right-arrow" onclick="cycleImage(event, this, 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="media-indicator">1/2</div>
         </div>
         <div class="card-content">
           <h3>MATLAB Airfoil Streamline Generator</h3>
@@ -316,21 +273,38 @@
 
   <script src="script.js"></script>
   <script>
-    function switchMedia(event, imgId, newSrc) {
-      if (event) {
-        event.stopPropagation();
-        event.preventDefault();
-      }
-      const imgElem = document.getElementById(imgId);
-      if (imgElem) {
-        imgElem.style.opacity = '0';
-        setTimeout(() => {
-          imgElem.src = newSrc;
-          imgElem.style.opacity = '1';
-        }, 150);
+    // Cycle through images using side arrow buttons
+    function cycleImage(event, btnElem, direction) {
+      event.stopPropagation(); // Stop lightbox from opening when clicking arrows
+      
+      const container = btnElem.closest('.card-image');
+      const imgElem = container.querySelector('img');
+      const indicator = container.querySelector('.media-indicator');
+      
+      const images = JSON.parse(container.getAttribute('data-images') || '[]');
+      const captions = JSON.parse(container.getAttribute('data-captions') || '[]');
+      if (images.length <= 1) return;
+
+      let currentIndex = parseInt(container.getAttribute('data-current-index') || '0');
+      currentIndex = (currentIndex + direction + images.length) % images.length;
+      
+      container.setAttribute('data-current-index', currentIndex);
+      
+      imgElem.style.opacity = '0';
+      setTimeout(() => {
+        imgElem.src = images[currentIndex];
+        if (captions[currentIndex]) {
+          imgElem.alt = captions[currentIndex];
+        }
+        imgElem.style.opacity = '1';
+      }, 150);
+
+      if (indicator) {
+        indicator.textContent = `${currentIndex + 1}/${images.length}`;
       }
     }
 
+    // Lightbox modal controls
     function openLightbox(imgElem) {
       const lightbox = document.getElementById('lightbox');
       const lightboxImg = document.getElementById('lightbox-img');
