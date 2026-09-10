@@ -507,3 +507,20 @@ input:focus, textarea:focus {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-logo {
+  height: 36px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.brand-link:hover .nav-logo {
+  transform: scale(1.08);
+}
