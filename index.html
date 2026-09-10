@@ -60,12 +60,12 @@
           <img id="iclr-img" src="assets/img/ICLR_1.png" alt="ICLR Rocketry Filament Winder" onclick="openLightbox(this)"/>
           <span class="badge team">Team Project</span>
           
-          <div class="media-dropdown">
+          <div class="media-dropdown" onclick="event.stopPropagation();">
             <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_1.png'); return false;">Winder Assembly</a>
-              <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_2.png'); return false;">5 micron tolerance</a>
-              <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_3.jpg'); return false;">Part in Lathe</a>
+              <a href="#" onclick="switchMedia(event, 'iclr-img', 'assets/img/ICLR_1.png');">Winder Assembly</a>
+              <a href="#" onclick="switchMedia(event, 'iclr-img', 'assets/img/ICLR_2.png');">5 micron tolerance</a>
+              <a href="#" onclick="switchMedia(event, 'iclr-img', 'assets/img/ICLR_3.jpg');">Part in Lathe</a>
             </div>
           </div>
         </div>
@@ -107,11 +107,11 @@
           <img src="assets/img/MedicalDrone.jpg" alt="Medical UAV Concept" onclick="openLightbox(this)"/>
           <span class="badge solo">Solo Project</span>
           
-          <div class="media-dropdown">
+          <div class="media-dropdown" onclick="event.stopPropagation();">
             <button class="dropdown-btn"><i class="fa-solid fa-film"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="assets/img/MedicalDrone.jpg" target="_blank">Photo Preview</a>
-              <a href="assets/img/MedicalDrone.mp4" target="_blank"><i class="fa-solid fa-play"></i> CAD Explosion Video</a>
+              <a href="assets/img/MedicalDrone.jpg" target="_blank" onclick="event.stopPropagation();">Photo Preview</a>
+              <a href="assets/img/MedicalDrone.mp4" target="_blank" onclick="event.stopPropagation();"><i class="fa-solid fa-play"></i> CAD Explosion Video</a>
             </div>
           </div>
         </div>
@@ -134,11 +134,11 @@
           <img id="pap-img" src="assets/img/PaparazziRover.jpg" alt="Paparazzi Rover Suspension" onclick="openLightbox(this)"/>
           <span class="badge team">Team Project</span>
 
-          <div class="media-dropdown">
+          <div class="media-dropdown" onclick="event.stopPropagation();">
             <button class="dropdown-btn"><i class="fa-solid fa-film"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#" onclick="switchMedia('pap-img', 'assets/img/PaparazziRover.jpg'); return false;">Rover</a>
-              <a href="#" onclick="switchMedia('pap-img', 'assets/img/ProjectOTYAward.jpg'); return false;">Project of the year award</a>
+              <a href="#" onclick="switchMedia(event, 'pap-img', 'assets/img/PaparazziRover.jpg');">Rover</a>
+              <a href="#" onclick="switchMedia(event, 'pap-img', 'assets/img/ProjectOTYAward.jpg');">Project of the year award</a>
             </div>
           </div>
         </div>
@@ -175,13 +175,13 @@
           <img id="duo-img" src="assets/img/DuoCopter_1.png" alt="Duo copter Controller" onclick="openLightbox(this)"/>
           <span class="badge academic">2nd Year Final</span>
           
-          <div class="media-dropdown">
+          <div class="media-dropdown" onclick="event.stopPropagation();">
             <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_1.png'); return false;">Hardware Rig</a>
-              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_2.png'); return false;">Simulink Diagram</a>
-              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_3.png'); return false;">Structural FEA</a>
-              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_4.jpg'); return false;">Test 3D Print</a>
+              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_1.png');">Hardware Rig</a>
+              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_2.png');">Simulink Diagram</a>
+              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_3.png');">Structural FEA</a>
+              <a href="#" onclick="switchMedia(event, 'duo-img', 'assets/img/DuoCopter_4.jpg');">Test 3D Print</a>
             </div>
           </div>
         </div>
@@ -204,12 +204,12 @@
           <img id="auto-img" src="assets/img/Autopilot_1.png" alt="Aircraft Autopilot Simulation" onclick="openLightbox(this)"/>
           <span class="badge academic">2nd Year Lab</span>
           
-          <div class="media-dropdown">
+          <div class="media-dropdown" onclick="event.stopPropagation();">
             <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_1.png'); return false;">Control Architecture</a>
-              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_2.png'); return false;">Wind Tunnel Tests</a>
-              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_3.png'); return false;">Simulink Diagram</a>
+              <a href="#" onclick="switchMedia(event, 'auto-img', 'assets/img/Autopilot_1.png');">Control Architecture</a>
+              <a href="#" onclick="switchMedia(event, 'auto-img', 'assets/img/Autopilot_2.png');">Wind Tunnel Tests</a>
+              <a href="#" onclick="switchMedia(event, 'auto-img', 'assets/img/Autopilot_3.png');">Simulink Diagram</a>
             </div>
           </div>
         </div>
@@ -232,13 +232,13 @@
           <img id="turbine-img" src="assets/img/WindTurbine_1.jpg" alt="Model Wind Turbine Structures" onclick="openLightbox(this)"/>
           <span class="badge academic">1st Year Final</span>
           
-          <div class="media-dropdown">
+          <div class="media-dropdown" onclick="event.stopPropagation();">
             <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_1.jpg'); return false;">Turbine Rig</a>
-              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_2.png'); return false;">Turbine</a>
-              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_3bendingmoment.png'); return false;">Bending Moment</a>
-              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_3stress.png'); return false;">Stress Analysis</a>
+              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_1.jpg');">Turbine Rig</a>
+              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_2.png');">Turbine</a>
+              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_3bendingmoment.png');">Bending Moment</a>
+              <a href="#" onclick="switchMedia(event, 'turbine-img', 'assets/img/WindTurbine_3stress.png');">Stress Analysis</a>
             </div>
           </div>
         </div>
@@ -261,11 +261,11 @@
           <img id="stream-img" src="assets/img/Streamlines_1.png" alt="MATLAB Airfoil Streamlines" onclick="openLightbox(this)"/>
           <span class="badge solo">Solo Project</span>
           
-          <div class="media-dropdown">
+          <div class="media-dropdown" onclick="event.stopPropagation();">
             <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#" onclick="switchMedia('stream-img', 'assets/img/Streamlines_1.png'); return false;">Streamlines Plot</a>
-              <a href="#" onclick="switchMedia('stream-img', 'assets/img/Streamlines_2.png'); return false;">Vector Plot</a>
+              <a href="#" onclick="switchMedia(event, 'stream-img', 'assets/img/Streamlines_1.png');">Streamlines Plot</a>
+              <a href="#" onclick="switchMedia(event, 'stream-img', 'assets/img/Streamlines_2.png');">Vector Plot</a>
             </div>
           </div>
         </div>
@@ -316,7 +316,11 @@
 
   <script src="script.js"></script>
   <script>
-    function switchMedia(imgId, newSrc) {
+    function switchMedia(event, imgId, newSrc) {
+      if (event) {
+        event.stopPropagation();
+        event.preventDefault();
+      }
       const imgElem = document.getElementById(imgId);
       if (imgElem) {
         imgElem.style.opacity = '0';
