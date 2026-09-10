@@ -54,10 +54,10 @@
 
     <div class="scroll-container">
 
-      <!-- ICLR Rocketry (3 Images) -->
+      <!-- ICLR Rocketry -->
       <div class="project-card">
         <div class="card-image">
-          <img id="iclr-img" src="assets/img/ICLR_1.png" alt="ICLR Rocketry Filament Winder"/>
+          <img id="iclr-img" src="assets/img/ICLR_1.png" alt="ICLR Rocketry Filament Winder" onclick="openLightbox(this)"/>
           <span class="badge team">Team Project</span>
           
           <div class="media-dropdown">
@@ -85,7 +85,7 @@
       <!-- Formula Student -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/IFR.jpg" alt="Formula Student Seat Composite"/>
+          <img src="assets/img/IFR.jpg" alt="Formula Student Seat Composite" onclick="openLightbox(this)"/>
           <span class="badge team">Team Project</span>
         </div>
         <div class="card-content">
@@ -104,7 +104,7 @@
       <!-- TDI Medical UAV -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/MedicalDrone.jpg" alt="Medical UAV Concept"/>
+          <img src="assets/img/MedicalDrone.jpg" alt="Medical UAV Concept" onclick="openLightbox(this)"/>
           <span class="badge solo">Solo Project</span>
           
           <div class="media-dropdown">
@@ -131,7 +131,7 @@
       <!-- Paparazzi Rover -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/PaparazziRover.jpg" alt="Paparazzi Rover Suspension"/>
+          <img src="assets/img/PaparazziRover.jpg" alt="Paparazzi Rover Suspension" onclick="openLightbox(this)"/>
           <span class="badge team">Team Project</span>
         </div>
         <div class="card-content">
@@ -161,10 +161,10 @@
 
     <div class="scroll-container">
 
-      <!-- Duo Copter (4 Images) -->
+      <!-- Duo Copter -->
       <div class="project-card">
         <div class="card-image">
-          <img id="duo-img" src="assets/img/DuoCopter_1.png" alt="Duo copter Controller"/>
+          <img id="duo-img" src="assets/img/DuoCopter_1.png" alt="Duo copter Controller" onclick="openLightbox(this)"/>
           <span class="badge academic">2nd Year Final</span>
           
           <div class="media-dropdown">
@@ -190,10 +190,10 @@
         </div>
       </div>
 
-      <!-- Aircraft Autopilot (3 Images) -->
+      <!-- Aircraft Autopilot -->
       <div class="project-card">
         <div class="card-image">
-          <img id="auto-img" src="assets/img/Autopilot_1.png" alt="Aircraft Autopilot Simulation"/>
+          <img id="auto-img" src="assets/img/Autopilot_1.png" alt="Aircraft Autopilot Simulation" onclick="openLightbox(this)"/>
           <span class="badge academic">2nd Year Lab</span>
           
           <div class="media-dropdown">
@@ -218,10 +218,10 @@
         </div>
       </div>
 
-      <!-- Wind Turbine (4 Images) -->
+      <!-- Wind Turbine -->
       <div class="project-card">
         <div class="card-image">
-          <img id="turbine-img" src="assets/img/WindTurbine_1.jpg" alt="Model Wind Turbine Structures"/>
+          <img id="turbine-img" src="assets/img/WindTurbine_1.jpg" alt="Model Wind Turbine Structures" onclick="openLightbox(this)"/>
           <span class="badge academic">1st Year Final</span>
           
           <div class="media-dropdown">
@@ -247,10 +247,10 @@
         </div>
       </div>
 
-      <!-- Airfoil Streamline (2 Images) -->
+      <!-- Airfoil Streamline -->
       <div class="project-card">
         <div class="card-image">
-          <img id="stream-img" src="assets/img/Streamlines_1.png" alt="MATLAB Airfoil Streamlines"/>
+          <img id="stream-img" src="assets/img/Streamlines_1.png" alt="MATLAB Airfoil Streamlines" onclick="openLightbox(this)"/>
           <span class="badge solo">Solo Project</span>
           
           <div class="media-dropdown">
@@ -299,6 +299,13 @@
     </div>
   </footer>
 
+  <!-- FULLSCREEN LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Full Image Preview" />
+    <div id="lightbox-caption"></div>
+  </div>
+
   <script src="script.js"></script>
   <script>
     function switchMedia(imgId, newSrc) {
@@ -311,6 +318,25 @@
         }, 150);
       }
     }
+
+    function openLightbox(imgElem) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      
+      lightbox.style.display = 'flex';
+      lightboxImg.src = imgElem.src;
+      lightboxCaption.textContent = imgElem.alt;
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    // Close lightbox on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
   </script>
 </body>
 </html>
