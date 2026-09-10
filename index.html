@@ -54,7 +54,7 @@
 
     <div class="scroll-container">
 
-      <!-- ICLR Rocketry (Multiple Images with Dropdown) -->
+      <!-- ICLR Rocketry (3 Images) -->
       <div class="project-card">
         <div class="card-image">
           <img id="iclr-img" src="assets/img/ICLR_1.png" alt="ICLR Rocketry Filament Winder"/>
@@ -65,6 +65,7 @@
             <div class="dropdown-content">
               <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_1.png'); return false;">Image 1 (Winder Assembly)</a>
               <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_2.png'); return false;">Image 2 (5 micron tolerance)</a>
+              <a href="#" onclick="switchMedia('iclr-img', 'assets/img/ICLR_3.jpg'); return false;">Image 3 (Part in Lathe)</a>
             </div>
           </div>
         </div>
@@ -100,7 +101,7 @@
         </div>
       </div>
 
-      <!-- TDI Medical UAV (Video / Image Media) -->
+      <!-- TDI Medical UAV -->
       <div class="project-card">
         <div class="card-image">
           <img src="assets/img/MedicalDrone.jpg" alt="Medical UAV Concept"/>
@@ -110,7 +111,7 @@
             <button class="dropdown-btn"><i class="fa-solid fa-film"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
               <a href="assets/img/MedicalDrone.jpg" target="_blank">Photo Preview</a>
-              <a href="assets/img/MedicalDrone.mp4" target="_blank"><i class="fa-solid fa-play"></i> CAD explosion</a>
+              <a href="assets/img/MedicalDrone.mp4" target="_blank"><i class="fa-solid fa-play"></i> CAD Explosion Video</a>
             </div>
           </div>
         </div>
@@ -160,7 +161,7 @@
 
     <div class="scroll-container">
 
-      <!-- Duo Copter (3 Images with Dropdown) -->
+      <!-- Duo Copter (4 Images) -->
       <div class="project-card">
         <div class="card-image">
           <img id="duo-img" src="assets/img/DuoCopter_1.png" alt="Duo copter Controller"/>
@@ -171,7 +172,8 @@
             <div class="dropdown-content">
               <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_1.png'); return false;">Image 1 (Hardware Rig)</a>
               <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_2.png'); return false;">Image 2 (Simulink Diagram)</a>
-              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_3.png'); return false;">Image 3 (structural FEA)</a>
+              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_3.png'); return false;">Image 3 (Structural FEA)</a>
+              <a href="#" onclick="switchMedia('duo-img', 'assets/img/DuoCopter_4.jpg'); return false;">Image 4 (3D Printed Test Arm)</a>
             </div>
           </div>
         </div>
@@ -188,7 +190,7 @@
         </div>
       </div>
 
-      <!-- Aircraft Autopilot (2 Images with Dropdown) -->
+      <!-- Aircraft Autopilot (3 Images) -->
       <div class="project-card">
         <div class="card-image">
           <img id="auto-img" src="assets/img/Autopilot_1.png" alt="Aircraft Autopilot Simulation"/>
@@ -198,7 +200,8 @@
             <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
             <div class="dropdown-content">
               <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_1.png'); return false;">Image 1 (Control Architecture)</a>
-              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_2.png'); return false;">Image 2 (Wind tunnel tests)</a>
+              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_2.png'); return false;">Image 2 (Wind Tunnel Tests)</a>
+              <a href="#" onclick="switchMedia('auto-img', 'assets/img/Autopilot_3.png'); return false;">Image 3 (Simulink Diagram)</a>
             </div>
           </div>
         </div>
@@ -215,7 +218,7 @@
         </div>
       </div>
 
-      <!-- Wind Turbine (2 Images with Dropdown) -->
+      <!-- Wind Turbine (4 Images) -->
       <div class="project-card">
         <div class="card-image">
           <img id="turbine-img" src="assets/img/WindTurbine_1.jpg" alt="Model Wind Turbine Structures"/>
@@ -226,6 +229,8 @@
             <div class="dropdown-content">
               <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_1.jpg'); return false;">Image 1 (Turbine Rig)</a>
               <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_2.png'); return false;">Image 2 (Turbine)</a>
+              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_3bendingmoment.png'); return false;">Image 3 (Bending Moment)</a>
+              <a href="#" onclick="switchMedia('turbine-img', 'assets/img/WindTurbine_3stress.png'); return false;">Image 4 (Stress Analysis)</a>
             </div>
           </div>
         </div>
@@ -242,11 +247,19 @@
         </div>
       </div>
 
-      <!-- Airfoil Streamline -->
+      <!-- Airfoil Streamline (2 Images) -->
       <div class="project-card">
         <div class="card-image">
-          <img src="assets/img/Streamlines.png" alt="MATLAB Airfoil Streamlines"/>
+          <img id="stream-img" src="assets/img/Streamlines_1.png" alt="MATLAB Airfoil Streamlines"/>
           <span class="badge solo">Solo Project</span>
+          
+          <div class="media-dropdown">
+            <button class="dropdown-btn"><i class="fa-solid fa-images"></i> View Media <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#" onclick="switchMedia('stream-img', 'assets/img/Streamlines_1.png'); return false;">Image 1 (Streamlines Plot)</a>
+              <a href="#" onclick="switchMedia('stream-img', 'assets/img/Streamlines_2.png'); return false;">Image 2 (Pressure Contour)</a>
+            </div>
+          </div>
         </div>
         <div class="card-content">
           <h3>MATLAB Airfoil Streamline Generator</h3>
@@ -288,7 +301,6 @@
 
   <script src="script.js"></script>
   <script>
-    // Inline helper function to swap project image previews
     function switchMedia(imgId, newSrc) {
       const imgElem = document.getElementById(imgId);
       if (imgElem) {
